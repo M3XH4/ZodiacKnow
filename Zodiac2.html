@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <title>Zodiac Sign</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4260/4260594.png" type="image/x-icon">
+        <style>
+            body {
+                background-image: url('https://t3.ftcdn.net/jpg/03/11/14/48/360_F_311144863_9GUJECyxEc492HNMY0cLcuss7oz5n5Jn.jpg');
+                
+            }
+            div {
+                padding: 2px;
+                border: 5px solid black;
+                border-radius: 5px;
+                background-color: white;
+                width: 75%;
+                height: 95%;
+                margin: auto;
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                left: 0px;
+                clear: both;
+                overflow: auto;
+            }
+            div p {
+                text-align: left;
+                font-family:'Times New Roman', Times, serif;
+                font-size: 2vw;
+            }
+            div h1 {
+                text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+            }
+			#load {
+				align: center;
+                height: auto;
+                display:block;
+			}
+        </style>
+    </head>
+    <body>
+         <div>
+            <h1>Zodiac Sign</h1>
+            <p id="display">Your Birthday is </p>
+            <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" alt="Loading" id="load">
+        </div>
+        <script>
+        var month = prompt("Enter Birth Month: ");
+		var day = prompt("Enter Birth Day: ");
+        var zodiac = new Array("Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpius", "Sagittarius", "Capricorn", "Aquarius", "Pisces");
+		document.getElementById("display").innerHTML = "Your Birthday is " + month.toUpperCase() + ", " + day + " ";
+        month = month.toLowerCase();
+        switch(month) {
+            case "january":
+				if (day <= 19) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[9];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/capricorn.png";
+                }
+                else if (day >= 20)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[10];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aquarius.png";
+                }
+                break;
+            case "febuary":
+                if (day <= 18)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[10];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aquarius.png";
+                }
+                else if (day >= 19)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[11];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/pisces.png";
+                }
+                break;
+            case "march":
+                if (day <= 20) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[11];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/pisces.png";
+                }
+				else if (day >= 21) 
+				{
+					document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[0];
+					document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aries.png";
+				}
+                break;
+            case "april":
+				if (day <= 19)
+				{
+					document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[0];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/aries.png";
+				}
+                else if (day >= 20)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[1];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/taurus.png";
+                }
+                break;
+            case "may":
+                if (day <= 20)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[1];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/taurus.png";
+                }
+                else if (day >= 21) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[2];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/gemini.png";
+                }
+                break;
+            case "june":
+                if (day <= 21) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[2];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/gemini.png";
+                }                
+                else if (day >= 22)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[3];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/cancer.png";
+                }
+                break;
+            case "july":
+                if (day <= 22) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[3];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/cancer.png";
+                }
+                else if (day >= 23) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[4];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/leo.png";
+                }
+                break;
+            case "august":
+                if (day <= 22) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[4];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/leo.png";
+                }
+                else if (day >= 23)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[5];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/virgo.png";
+                }
+                break;
+            case "september":
+                if (day <= 22)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[5];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/virgo.png";
+                }
+                else if (day >= 23)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[6];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/libra.png";
+                }
+                break;
+            case "october":
+                if (day <= 23) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[6];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/libra.png";
+                }
+                else if (day >= 24) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[7];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/scorpius.png";
+                }
+                break;
+            case "november":
+                if (day <= 21)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[7];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/scorpius.png";
+                }
+                else if (day >= 22) 
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[8];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/sagittarius.png";
+                }
+                break;
+            case "december":
+                if (day <= 21)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[8];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/sagittarius.png";
+                }
+                else if (day >= 22)
+                {
+                    document.getElementById("display").innerHTML = display.innerHTML + "and Your Zodiac Sign is " + zodiac[9];
+                    document.getElementById("load").src = "https://gfx.tarot.com/images/feeds/infographics/tarot-zodiac-cards/capricorn.png";
+                }
+                break;
+        }
+        
+
+        </script>
+        
+    </body>
+</html>
